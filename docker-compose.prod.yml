@@ -1,0 +1,28 @@
+services:
+
+  mongodb:
+    image: mongo:7.0.43-jammy
+    restart: unless-stopped
+    volumes:
+      - mongo_data:/data/db
+
+  backend:
+    image: harryp0tter/ems-backend:latest
+    restart: unless-stopped
+    environment:
+      PORT: 8000
+      DATABASE_URL: mongodb://mongodb:27017
+      DB_NAME: EMS
+    depends_on:
+      - mongodb
+
+  frontend:
+    image: harryp0tter/ems-frontend:latest
+    restart: unless-stopped
+    ports:
+      - "5173:80"
+    depends_on:
+      - backend
+
+volumes:
+  mongo_data:
