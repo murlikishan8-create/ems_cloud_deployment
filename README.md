@@ -55,7 +55,7 @@ The public route table and subnet association.
 
 Docker installation and service status on the EC2 instance.
 
-![Ubuntu terminal on the EC2 instance displaying Docker setup and the status of the application containers in command-line output.](screenshots/docker-containers.png)
+![Ubuntu terminal on the EC2 instance displaying Docker setup and the status of the application containers in command-line output.](screenshots/Docker-containers.png)
 
 ### Vpc setup
 
