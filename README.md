@@ -38,28 +38,28 @@ This project was a hands-on exercise in deploying an application on AWS.
 
 ### EC2 Instance
 
-![AWS EC2 console displaying the Ubuntu instance used for the Employee Management System deployment.](ec2-instance.png)
+![AWS EC2 management console showing the instance.](screenshots/ec2-instance.png)
 
 ### Employee Management System application
 
-![Employee Management System application open in a browser, showing its interface as served from the EC2 deployment.](application-running.png)
+![Employee Management System running in a web browser](screenshots/application-running.png)
 
 
 ### AWS Networking
 
 The public route table and subnet association.
 
-![AWS console displaying the public route table and associated subnet for the deployment network.](screenshots/aws-public-route-table(2).png)
+![AWS VPC console showing the public route table and its associated subnet.](screenshots/aws-public-route-table.png)
 
 ### EC2 Docker Setup
 
 Docker installation and service status on the EC2 instance.
 
-![EC2 terminal displaying Docker setup and the status of the application containers.](screenshots/docker-containers.png)
+![Ubuntu terminal on the EC2 instance displaying Docker setup and the status of the application containers in command-line output.](screenshots/docker-containers.png)
 
 ### Vpc setup
 
-![AWS console displaying the VPC configuration for the EC2 deployment network.](vpc-setup.png)
+![AWS VPC console displaying the virtual private cloud configuration for the EC2 deployment network within the cloud networking dashboard.](screenshots/vpc-setup.png)
 
 ## Project Decisions
 
